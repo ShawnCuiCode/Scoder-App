@@ -1,0 +1,128 @@
+// ==============================
+// Primary Colors
+// ==============================
+
+$app-theme-color: #5758f6; // Main theme color
+$app-theme-light-color: #aeaffe; // Lighter shade of the main theme color
+$app-theme-deep-color: #8a90ff; // Deeper shade of the main theme color
+
+// ==============================
+// Background Colors
+// ==============================
+
+$app-theme-bg-color: #ffffff; // Default white background
+$app-theme-bg-gray-color: #fafafa; // Light gray background
+$app-theme-bg-gray-deep-color: #f8f8f8; // Deep gray background
+$app-theme-search-bg-color: #F4F5F8; // Background color for search components
+
+// ==============================
+// Content Colors
+// ==============================
+
+$app-theme-border-color: #efefef; // Border color
+$app-theme-text-color: #333333; // Default text color (dark gray)
+
+$app-theme-text-gray-color: #8f92a1; // Light gray text
+$app-theme-card-gray-light-color: #cccccc; // Very light gray for card components
+$app-theme-card-gray-deep-color: #696969; // Deep gray for card components
+$app-theme-text-white-color: #ffffff; // White text color
+$app-theme-text-black-color: #171717; // Black text color
+$app-theme-text-black-deep-color: #16162e; // Deep black for text
+$app-theme-text-money-color: #fd4558; // Red color for monetary values
+$app-theme-text-gray-white-color: #c3c6cb; // Grayish-white text color
+
+// ==============================
+// Special Purpose Colors
+// ==============================
+
+$app-theme-navbar-tab-color: #696969; // Default color for inactive navbar tabs
+$app-theme-navbar-tab-color-active: #333333; // Active navbar tab color
+
+$app-theme-card-gray-color: #8f92a1; // Gray color for cards
+$app-theme-sku-gray-color: #f5f5f8; // Gray for SKU-related sections
+$app-theme-shop-gray-color: #888e98; // Gray color used for shop components
+
+$app-theme-points-sign-bg-color: #f0f0f0; // Background for points/sign components
+$app-theme-points-sign-label-bg-color: #dfdfdf; // Label background in points/sign
+$app-theme-points-sign-value-color: #696969; // Text color for points/sign values
+$app-theme-points-yellow-color: #f9a906; // Yellow color for points
+$app-theme-points-blue-color: #5758f6; // Blue color for points
+
+// ==============================
+// Shadows
+// ==============================
+
+$app-theme-shadow: 0px 2px 8px 0px rgba(27, 25, 86, 0.06); // Subtle shadow effect
+
+// ==============================
+// Z-Index Values
+// ==============================
+
+$app-zIndex-deep: 0; // Lowest z-index
+$app-zIndex-normal: 19; // Normal z-index
+$app-zIndex-absolute: 99; // z-index for absolute positioning
+$app-zIndex-fixed: 199; // z-index for fixed elements
+$app-zIndex-page: 999; // Highest z-index for page-level elements
+
+// ==============================
+// Global Page Styles
+// ==============================
+
+.page {
+  min-height: 100vh; // Ensure the page covers the full viewport height
+  background-color: $app-theme-bg-gray-color; // Default background color for pages
+}
+
+// ==============================
+// Global Slot Styles
+// ==============================
+
+.slot {
+  // Define global styles for slot components if needed
+}
+
+// ==============================
+// Export SCSS Variables for Use in JavaScript
+// ==============================
+
+:export {
+  // Export theme colors
+  appThemeColor: $app-theme-color;
+
+  appThemeBgColor: $app-theme-bg-color;
+  appThemeBgGrayColor: $app-theme-bg-gray-color;
+  appThemeBgGrayDeppColor: $app-theme-bg-gray-deep-color;
+  appThemeSearchBgColor: $app-theme-search-bg-color;
+
+  appThemeBorderColor: $app-theme-border-color;
+
+  appThemeTextColor: $app-theme-text-color;
+  appThemeTextGrayColor: $app-theme-text-gray-color;
+  appThemeTextGrayLightColor: $app-theme-card-gray-light-color;
+  appThemeTextGrayDeepColor: $app-theme-card-gray-deep-color;
+  appThemeTextWhiteColor: $app-theme-text-white-color;
+  appThemeTextBlackColor: $app-theme-text-black-color;
+  appThemeTextBlackDeepColor: $app-theme-text-black-deep-color;
+  appThemeTextMoneyColor: $app-theme-text-money-color;
+  appThemeTextGrayWhiteColor: $app-theme-text-gray-white-color;
+  appThemeSkuGrayColor: $app-theme-sku-gray-color;
+  appThemeCardGrayColor: $app-theme-card-gray-color;
+  appThemeShopGrayColor: $app-theme-shop-gray-color;
+
+  appThemePointsSignBgColor: $app-theme-points-sign-bg-color;
+  appThemePointsSignLabelColor: $app-theme-points-sign-label-bg-color;
+  appThemePointsSignValueColor: $app-theme-points-sign-value-color;
+  appThemePointsSignYellowColor: $app-theme-points-yellow-color;
+  appThemePointsSignBlueColor: $app-theme-points-blue-color;
+
+  appThemeNavbarTabColor: $app-theme-navbar-tab-color;
+  appThemeNavbarTabColorActive: $app-theme-navbar-tab-color-active;
+
+  appThemeShadow: $app-theme-shadow;
+
+  appZIndexDeep: $app-zIndex-deep;
+  appZIndexNormal: $app-zIndex-normal;
+  appZIndexAbsolute: $app-zIndex-absolute;
+  appZIndexFixed: $app-zIndex-fixed;
+  appZIndexPage: $app-zIndex-page;
+}

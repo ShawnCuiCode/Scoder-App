@@ -1,0 +1,117 @@
+{
+  "easycom": {
+    // Automatically map and register uView UI components
+    "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    // Define the pages included in the app
+    {
+      "path": "pages/login/index"
+      // Login page
+    },
+    {
+      "path": "pages/home/index"
+      // Home page
+    },
+    {
+      "path": "pages/home/projects"
+      // Projects page
+    },
+    {
+      "path": "pages/home/team-detail"
+      // Team detail page
+    },
+    {
+      "path": "pages/home/add-or-update-team"
+      // Add or update team page
+    },
+    {
+      "path": "pages/home/add-or-update-projects"
+      // Add or update projects page
+    },
+    {
+      "path": "pages/message/index"
+      // Message page (main)
+    },
+    {
+      "path": "pages/message/direct-message"
+      // Direct message page
+    },
+    {
+      "path": "pages/message/team-message"
+      // Team message page
+    },
+    {
+      "path": "pages/my/index"
+      // My profile (main) page
+    },
+    {
+      "path": "pages/my/profile"
+      // Edit profile page
+    },
+    {
+      "path": "pages/my/change-password"
+      // Change password page
+    },
+    {
+      "path": "pages/my/my-projects"
+      // My projects page
+    },
+    {
+      "path": "pages/my/my-teams"
+      // My teams page
+    }
+  ],
+  "preloadRule": {
+    // Define preload rules for faster navigation between pages (optional, currently empty)
+  },
+  "globalStyle": {
+    // Customize global navigation bar appearance
+    "navigationStyle": "custom",
+    // Use custom navigation style
+    "navigationBarTextStyle": "black"
+    // Set navigation bar text color to black
+  },
+  "tabBar": {
+    // Define the bottom tab bar configuration
+    "color": "#8F92A1",
+    // Default color for unselected tab items
+    "selectedColor": "#171717",
+    // Color for the selected tab item
+    "list": [
+      {
+        "text": "Home",
+        // Tab label
+        "pagePath": "pages/home/index",
+        // Page path for this tab
+        "iconPath": "./static/tabbar/home.png",
+        // Icon for unselected state
+        "selectedIconPath": "./static/tabbar/home_active.png"
+        // Icon for selected state
+      },
+      {
+        "text": "Message",
+        // Tab label
+        "pagePath": "pages/message/index",
+        // Page path for this tab
+        "iconPath": "./static/tabbar/chat.png",
+        // Icon for unselected state
+        "selectedIconPath": "./static/tabbar/chat_active.png"
+        // Icon for selected state
+      },
+      {
+        "text": "My",
+        // Tab label
+        "pagePath": "pages/my/index",
+        // Page path for this tab
+        "iconPath": "./static/tabbar/user.png",
+        // Icon for unselected state
+        "selectedIconPath": "./static/tabbar/user_active.png"
+        // Icon for selected state
+      }
+    ]
+  },
+  "condition": {
+    // Define condition-based settings (optional, currently empty)
+  }
+}
