@@ -1,0 +1,14 @@
+{
+  "name": "Scoder",
+  "version": "1.0",
+  "description": "Scoder",
+  "main": "main.js",
+  "id": "nx-temp-shop",
+  "displayName": "Scoder",
+  "keywords": [
+  ],
+  "dcloudext": {
+    "category": [
+    ]
+  }
+}
