@@ -1,8 +1,8 @@
-export const HTTP_URL_DEV = 'http://127.0.0.1:8080';
-export const HTTP_URL_PROD = 'http://127.0.0.1:8080';
+export const HTTP_URL_DEV = 'http://scoder.co.uk';
+export const HTTP_URL_PROD = 'http://scoder.co.uk';
 
-export const HTTP_URL_DEV_PREFIX = '';
-export const HTTP_URL_PROD_PREFIX = '';
+export const HTTP_URL_DEV_PREFIX = '/api';
+export const HTTP_URL_PROD_PREFIX = '/api';
 
 // uView UI HTTP Configuration
 export const UVIEWUI_HTTP_CONFIG = {

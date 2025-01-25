@@ -97,7 +97,7 @@ export default {
         projectId: '',
         teamNumber: 1,
       },
-      uploadUrl: 'http://127.0.0.1:8080/file/upload',
+      uploadUrl: 'http://scoder.co.uk/api/file/upload',
       skillsOptions: [],
       goalsOptions: [],
       experienceOptions: [],

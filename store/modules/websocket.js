@@ -28,7 +28,7 @@ const websocketModule = {
             }
 
             const socket = uni.connectSocket({
-                url: "ws://127.0.0.1:58080/webSocket",
+                url: "ws://scoder.co.uk:58080/webSocket",
                 success: () => {
                     console.log("WebSocket connection initiated");
                 },

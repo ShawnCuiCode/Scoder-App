@@ -58,7 +58,7 @@ export default {
         projectName: "", // Project name
         description: "", // Project description
       },
-      uploadUrl: "http://127.0.0.1:8080/file/upload", // File upload URL
+      uploadUrl: "http://scoder.co.uk/api/file/upload", // File upload URL
     };
   },
   onLoad(options) {
