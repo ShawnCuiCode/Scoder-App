@@ -43,10 +43,22 @@ export default {
     // Handle the join button click
     async handleButtonClick() {
       try {
-        await this.$u.api.joinTeam(this.data.teamId);
-        // Optionally emit an event or handle success state
-        this.$emit('joined', this.data.teamId);
+        // Call the API to join the team
+        const response = await this.$u.api.joinTeam(this.data.teamId);
+
+        // If the response is successful, update the isJoined state to 1, indicating the user has joined
+        if (response.code === 200) {
+          console.log('success joined')
+          this.$set(this.data, 'isJoined', 1); // Update the state
+          // Optionally emit an event to notify the parent component
+          this.$emit('joined', this.data.teamId);
+          console.log('jump')
+          uni.navigateTo({
+            url: `/pages/message/team-message?teamId=${this.data.teamId}&teamName=${this.data.team}`
+          })
+        }
       } catch (error) {
+        // Log any error that occurs while joining the team
         console.error('Error joining team:', error);
       }
     }
