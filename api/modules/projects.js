@@ -25,6 +25,10 @@ export const useProjectsApi = (Vue, vm) => {
             return await vm.$u.http.post('/projects', data);
         },
 
+        async updateProject(data) {
+            return await vm.$u.http.put('/projects', data);
+        },
+
         // Adds a new team with the provided form data
         async addTeam(form) {
             return await vm.$u.http.post('projects/team', form);
