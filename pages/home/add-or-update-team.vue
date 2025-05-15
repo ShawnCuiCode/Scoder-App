@@ -40,30 +40,33 @@
           </u-checkbox-group>
         </u-form-item>
 
-        <u-form-item :border-bottom="true" label="Team Number" label-position="top">
-          <u-number-box v-model="value" @change="valChange"></u-number-box>
-        </u-form-item>
+<!--        <u-form-item :border-bottom="true" label="Team Number" label-position="top">-->
+<!--          <u-number-box v-model="value" @change="valChange"></u-number-box>-->
+<!--        </u-form-item>-->
 
         <u-form-item :border-bottom="true" label="Goal">
-          <u-button class="choose_btn" plain @click="showGoals = true">Choose Goal</u-button>
+<!--          <u-button class="choose_btn" plain @click="showGoals = true">Choose Goal</u-button>-->
+          <u-cell-item @click="showGoals = true"></u-cell-item>
           <u-select v-model="showGoals" :list="goalsOptions" mode="single-column" @confirm="updateGoal"></u-select>
         </u-form-item>
 
         <u-form-item :border-bottom="true" label="Experience">
-          <u-button class="choose_btn" plain @click="showExperience = true">Choose Experience</u-button>
+<!--          <u-button class="choose_btn" plain @click="showExperience = true">Choose Experience</u-button>-->
+          <u-cell-item @click="showExperience = true"></u-cell-item>
           <u-select v-model="showExperience" :list="experienceOptions" mode="single-column"
                     @confirm="updateExperience"></u-select>
         </u-form-item>
 
         <u-form-item :border-bottom="true" label="Project">
-          <u-button class="choose_btn" plain @click="showProjects = true">Choose Project</u-button>
+<!--          <u-button class="choose_btn" plain @click="showProjects = true">Choose Project</u-button>-->
+          <u-cell-item @click="showProjects = true"></u-cell-item>
           <u-select v-model="showProjects" :list="projectsOptions" mode="single-column"
                     @confirm="updateProject"></u-select>
         </u-form-item>
 
       </u-form>
 
-      {{ this.form }}
+<!--      {{ this.form }}-->
     </view>
     <view class="btn">
       <u-button type="primary" @click="submit (form)">
