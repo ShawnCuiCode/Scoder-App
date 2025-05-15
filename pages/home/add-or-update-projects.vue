@@ -3,23 +3,25 @@
     <!-- Navbar with dynamic title -->
     <Navbar :title="title"></Navbar>
     <view class="form">
-      <!-- File upload component -->
-      <u-upload
-          ref="uUpload"
-          :action="uploadUrl"
-          :auto-upload="true"
-          :deleteConfirmBtnColor="themeColor"
-          :max-size="1024 * 1024 * 10"
-          :preview-full-image="true"
-          height="180"
-          max-count="1"
-          width="180"
-          @on-success="uploadSuccess"
-          @on-remove="uploadRemoved"
-      ></u-upload>
-
       <!-- Form for project details -->
       <u-form ref="form" :model="form" label-position="top" label-width="180rpx">
+        <u-form-item class="upload">
+          <u-upload
+              ref="uUpload"
+              :action="uploadUrl"
+              :auto-upload="true"
+              :deleteConfirmBtnColor="appThemeColor"
+              :max-size="1024 * 1024 * 10"
+              :preview-full-image="true"
+              :value="form.avatar"
+              height="180"
+              max-count="1"
+              width="180"
+              @on-success="uploadSuccess"
+              @on-remove="uploadRemoved"
+          ></u-upload>
+        </u-form-item>
+
         <u-form-item label="Project Name">
           <u-input v-model="form.projectName" placeholder="Please enter project name"/>
         </u-form-item>
@@ -182,5 +184,9 @@ export default {
 
 .btn {
   padding: 20rpx 0rpx;
+}
+
+.upload {
+  align-items: center;
 }
 </style>

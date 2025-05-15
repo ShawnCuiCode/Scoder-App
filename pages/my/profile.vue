@@ -142,7 +142,7 @@ export default {
           }
         },
         fail: (err) => {
-          console.error('上传失败:', err);
+          console.error('Upload failed:', err);
           uni.showToast({
             title: 'Upload failed. Please try again.',
             icon: 'none',
