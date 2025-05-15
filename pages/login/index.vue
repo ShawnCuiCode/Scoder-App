@@ -73,16 +73,15 @@
           </u-checkbox-group>
         </u-form-item>
 
-        <u-form-item :border-bottom="true" label="Goal">
-          <u-button plain style="width: 100%;margin-left: 60rpx" @click="showGoals = true">Choose Goal
-          </u-button>
+        <u-form-item :border-bottom="false" label="Goal">
+<!--          <u-button plain style="width: 100%;margin-left: 60rpx" @click="showGoals = true">Choose Goal</u-button>-->
+          <u-cell-item @click="showGoals = true"></u-cell-item>
           <u-select v-model="showGoals" :list="goalsOptions" mode="single-column" @confirm="updateGoal"></u-select>
         </u-form-item>
 
-        <u-form-item :border-bottom="true" label="Experience">
-          <u-button plain style="width: 100%;margin-left: 60rpx" @click="showExperience = true">Choose
-            Experience
-          </u-button>
+        <u-form-item :border-bottom="false" label="Experience">
+<!--          <u-button plain style="width: 100%;margin-left: 60rpx" @click="showExperience = true">Choose Experience</u-button>-->
+          <u-cell-item @click="showExperience = true"></u-cell-item>
           <u-select v-model="showExperience" :list="experienceOptions" mode="single-column"
                     @confirm="updateExperience"></u-select>
         </u-form-item>
@@ -100,7 +99,10 @@
 
 <script>
 
+import UCellItem from "../../uview-ui/components/u-cell-item/u-cell-item.vue";
+
 export default {
+  components: {UCellItem},
   data() {
     return {
       pageStatus: 'home', // Current page status ('home' or 'register')

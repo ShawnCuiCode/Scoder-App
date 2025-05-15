@@ -44,20 +44,20 @@
 <!--          <u-number-box v-model="value" @change="valChange"></u-number-box>-->
 <!--        </u-form-item>-->
 
-        <u-form-item :border-bottom="true" label="Goal">
+        <u-form-item :border-bottom="false" label="Goal">
 <!--          <u-button class="choose_btn" plain @click="showGoals = true">Choose Goal</u-button>-->
           <u-cell-item @click="showGoals = true"></u-cell-item>
           <u-select v-model="showGoals" :list="goalsOptions" mode="single-column" @confirm="updateGoal"></u-select>
         </u-form-item>
 
-        <u-form-item :border-bottom="true" label="Experience">
+        <u-form-item :border-bottom="false" label="Experience">
 <!--          <u-button class="choose_btn" plain @click="showExperience = true">Choose Experience</u-button>-->
           <u-cell-item @click="showExperience = true"></u-cell-item>
           <u-select v-model="showExperience" :list="experienceOptions" mode="single-column"
                     @confirm="updateExperience"></u-select>
         </u-form-item>
 
-        <u-form-item :border-bottom="true" label="Project">
+        <u-form-item :border-bottom="false" label="Project">
 <!--          <u-button class="choose_btn" plain @click="showProjects = true">Choose Project</u-button>-->
           <u-cell-item @click="showProjects = true"></u-cell-item>
           <u-select v-model="showProjects" :list="projectsOptions" mode="single-column"
