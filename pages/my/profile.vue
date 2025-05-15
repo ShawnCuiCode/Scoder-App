@@ -27,7 +27,6 @@
           <u-radio-group v-model="user.gender">
             <u-radio name="0">Male</u-radio>
             <u-radio name="1">Female</u-radio>
-            <u-radio name="2">Others</u-radio>
           </u-radio-group>
         </u-form-item>
         <!-- Skills Selection -->
@@ -46,19 +45,21 @@
         </u-form-item>
 
         <u-form-item :border-bottom="true" label="Goal">
-          <u-button class="choose_btn" plain @click="showGoals = true">Choose Goal</u-button>
+<!--          <u-button class="choose_btn" plain @click="showGoals = true">Choose Goal</u-button>-->
+          <u-cell-item @click="showGoals = true"></u-cell-item>
           <u-select v-model="showGoals" :list="goalsOptions" mode="single-column" @confirm="updateGoal"></u-select>
         </u-form-item>
 
         <u-form-item :border-bottom="true" label="Experience">
-          <u-button class="choose_btn" plain @click="showExperience = true">Choose Experience</u-button>
+<!--          <u-button class="choose_btn" plain @click="showExperience = true">Choose Experience</u-button>-->
+          <u-cell-item @click="showExperience = true"></u-cell-item>
           <u-select v-model="showExperience" :list="experienceOptions" mode="single-column"
                     @confirm="updateExperience"></u-select>
         </u-form-item>
         <!--        <view class="selected-skills">-->
         <!--          Selected skills: {{ user }}-->
         <!--        </view>-->
-        {{ user }}
+<!--        {{ user }}-->
         <view class="register-btn" @click="updateProfile">Save</view>
       </view>
     </u-form>
@@ -66,7 +67,10 @@
 </template>
 
 <script>
+import UCellItem from "../../uview-ui/components/u-cell-item/u-cell-item.vue";
+
 export default {
+  components: {UCellItem},
   data() {
     return {
 
