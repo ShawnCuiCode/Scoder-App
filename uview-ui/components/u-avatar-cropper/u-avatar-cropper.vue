@@ -27,12 +27,12 @@
     </view>
     <view :style="{ height: bottomNavHeight + 'px' }" class="cropper-buttons safe-area-padding">
       <!-- #ifdef H5 -->
-      <view class="upload" @tap="uploadTap">选择图片</view>
+      <view class="upload" @tap="uploadTap">Choose Image</view>
       <!-- #endif -->
       <!-- #ifndef H5 -->
-      <view class="upload" @tap="uploadTap">重新选择</view>
+      <view class="upload" @tap="uploadTap">ReChoose</view>
       <!-- #endif -->
-      <view class="getCropperImage" @tap="getCropperImage(false)">确定</view>
+      <view class="getCropperImage" @tap="getCropperImage(false)">Confirm</view>
     </view>
   </view>
 </template>
@@ -184,7 +184,7 @@ export default {
       this.cropper.touchEnd(e);
     },
     getCropperImage(isPre = false) {
-      if (!this.src) return this.$u.toast('请先选择图片再裁剪');
+      if (!this.src) return this.$u.toast('请先Choose Image再裁剪');
 
       let cropper_opt = {
         destHeight: Number(this.destWidth), // uni.canvasToTempFilePath要求这些参数为数值

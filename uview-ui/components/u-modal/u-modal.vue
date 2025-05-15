@@ -110,12 +110,12 @@ export default {
     // 确认文案
     confirmText: {
       type: String,
-      default: '确认'
+      default: 'Confirm'
     },
     // 取消文案
     cancelText: {
       type: String,
-      default: '取消'
+      default: 'Cancel'
     },
     // 确认按钮颜色
     confirmColor: {

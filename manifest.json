@@ -109,7 +109,7 @@
         "template" : "template.h5.html",
         "router" : {
             "mode" : "hash",
-            "base" : ""
+            "base" : "/app/"
         },
         "optimization" : {
             "treeShaking" : {

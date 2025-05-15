@@ -38,9 +38,9 @@
       </u-form-item>
 
       <!-- Number of team members -->
-      <u-form-item label="Team Number" label-position="top">
-        <text>{{ team.teamNumber }}</text>
-      </u-form-item>
+<!--      <u-form-item label="Team Number" label-position="top">-->
+<!--        <text>{{ team.teamNumber }}</text>-->
+<!--      </u-form-item>-->
 
       <!-- Team's goal -->
       <u-form-item label="Goal" label-position="top">

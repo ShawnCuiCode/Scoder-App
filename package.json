@@ -5,10 +5,11 @@
   "main": "main.js",
   "id": "nx-temp-shop",
   "displayName": "Scoder",
-  "keywords": [
-  ],
+  "keywords": [],
   "dcloudext": {
-    "category": [
-    ]
+    "category": []
+  },
+  "dependencies": {
+    "vue-i18n": "8"
   }
 }

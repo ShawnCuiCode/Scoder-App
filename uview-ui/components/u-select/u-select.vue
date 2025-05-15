@@ -153,12 +153,12 @@ export default {
     // 取消按钮的文字
     cancelText: {
       type: String,
-      default: '取消'
+      default: 'Cancel'
     },
     // 确认按钮的文字
     confirmText: {
       type: String,
-      default: '确认'
+      default: 'Confirm'
     }
   },
   data() {

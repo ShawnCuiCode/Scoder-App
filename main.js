@@ -3,7 +3,7 @@ import App from './App';
 
 // Import uView UI library globally
 import uView from 'uview-ui';
-
+import en from './lang/uview-en.js'
 // Import global components
 import Navbar from '@/components/navbar/navbar.vue'; // Navbar component
 import NoData from '@/components/no-data.vue'; // NoData placeholder component
@@ -30,6 +30,14 @@ App.mpType = 'app'; // Specify the type of the Vue instance as an app
 
 // Register uView UI globally
 Vue.use(uView);
+
+uni.$u.config = {
+  lang: 'en'
+}
+
+Vue.prototype.$u.lang = {
+  en
+}
 
 // Register global components
 Vue.component('Navbar', Navbar); // Register Navbar as a global component

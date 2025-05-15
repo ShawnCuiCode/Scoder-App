@@ -104,7 +104,7 @@ export default {
     // 取消按钮的文字提示
     cancelText: {
       type: String,
-      default: '取消'
+      default: 'Cancel'
     }
   },
   computed: {
